@@ -7,6 +7,7 @@ class TestSetUp(APITestCase):
         self.crawler_url = reverse('crawler')
         self.user_data = {
             'base_url': 'abc.com/xyz',
+            'depth': 1,
         }
         return super().setUp()
     
