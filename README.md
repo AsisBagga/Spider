@@ -1,6 +1,6 @@
 # Spider Crawler
-A simple web crawler service named spider (server and client) built in Django/Python language. Client is available in Golang and Python language. The server would receive requests from a client to crawl a URL and should send the response i.e sitemap back to the client. 
-Client request in json would be:
+A simple web crawler service named spider (server and client) built in Django/Python language. Client script is available in Golang and Python language. The server would receive requests from a client to crawl a URL and should send the response i.e sitemap back to the client. 
+Client will do a POST request with data as json would look like:
 ``` 
 {
     "base_url": "https://foobar.com/baz",
@@ -31,7 +31,7 @@ Server is deployed in a Kuberenets cluster. The docker image of server is availa
 
 ### Details Steps to run the project in your local system:
 Prerequists: 
-    Kubernetes and minikube should be already installed in your local system. 
+    Docker, kubectl and minikube should be already installed in your local system. 
 
 - Step 1: clone the project to your local system.
     - ` git clone https://github.com/AsisBagga/Django-WebCrawler.git`
