@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-spider
+spec:
+  selector:
+    matchLabels:
+      app: django-spider
+  template:
+    metadata:
+      labels:
+        app: django-spider
+    spec:
+      containers:
+      - name: django-spider
+        image: docker.io/asis80/spider:redis
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
