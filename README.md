@@ -44,7 +44,7 @@ Prerequists:
         - minikube service django-spider —url
     - K8s Cluster without LoadBalancer:
         - kubectl port-forward deploy/django-spider 8080:8000
-- Step 5: Once your deployment pods are running goto chorme to verify its reachable at 127.0.0.1:8000/crawler/
+- Step 5: Once your deployment pods are running goto chorme to verify its reachable at 127.0.0.1:8080/crawler/
 - Step 6: If it is reachable over chrome then run your client.py file as `python client.py` it would revert with a sitemap. 
 
 > Note: if you may find any issues, I am reachable at asisbagga@gmail.com. Although, you can login to the pod to check if redis-server is up by running command `redis-cli ping` it should reply as "PONG" 
